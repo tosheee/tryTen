@@ -1,15 +1,11 @@
-{% load staticfiles %}
+{% extends 'base.html' %}
+<h1> anoter h1 tag</h1>
 
-<!DOCTYPE html>
+ {% block two %}
+    <h1>Hello two </h1>
+ {% endblock %}
 
-<html>
-    <head>
-        <title></title>
-        <link rel="stylesheet" href='{% static "css/main.css" %}'>
-    </head>
-
-    <body>
-        <h1>Hello world</h1>
-    </body>
-</html>
+ {% block content %}
+    <h1>Hello world </h1>
+ {% endblock %}
 
